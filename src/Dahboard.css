@@ -313,7 +313,6 @@ body {
 .dashboard-content {
   flex: 1;
   padding: 1.5rem 2rem;
-  overflow-y: auto;
   background: transparent;
 }
 
