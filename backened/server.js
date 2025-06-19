@@ -49,7 +49,7 @@ app.use(session({
 const authLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100 });
 const aiLimiter = rateLimit({
   windowMs: 60 * 60 * 1000,
-  max: 50,
+  max: 100,
   keyGenerator: req => req.session.user?.email || req.ip,
   message: 'Too many AI requests, please try again later'
 });
