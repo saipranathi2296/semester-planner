@@ -1,0 +1,165 @@
+/* DailyTracker.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e0f7fa;
+  color: #333;
+}
+
+.tracker-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.tracker-header {
+  text-align: center;
+  background: #b2ebf2;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #a0d8e0, -10px -10px 20px #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tracker-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tracker-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0f7fa;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  box-shadow: inset 10px 10px 20px #b0dfe5, inset -10px -10px 20px #ffffff;
+}
+
+.add-task {
+  background: #81d4fa;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px #70c0e6, -4px -4px 8px #ffffff;
+  cursor: pointer;
+}
+
+.tracker-body {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.calendar {
+  flex: 1;
+  background: #e0f7fa;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 10px 10px 20px #b0dfe5, -10px -10px 20px #ffffff;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.calendar-day {
+  padding: 0.75rem;
+  background: #d0f0f8;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #b0dfe5, -5px -5px 10px #ffffff;
+}
+
+.calendar-day.active {
+  background: #81d4fa;
+  color: white;
+  font-weight: bold;
+}
+
+.today-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #4fc3f7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px #70c0e6, -4px -4px 8px #ffffff;
+}
+
+.tasks-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-card {
+  background: #e0f7fa;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: inset 8px 8px 16px #b0dfe5, inset -8px -8px 16px #ffffff;
+}
+
+.task-note {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.journal-section {
+  background: #e0f7fa;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 10px 10px 20px #b0dfe5, -10px -10px 20px #ffffff;
+}
+
+.journal-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.journal-fields label {
+  grid-column: span 3;
+  font-weight: bold;
+}
+
+.journal-fields select,
+.journal-fields input,
+.journal-fields textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px #b0dfe5, inset -5px -5px 10px #ffffff;
+  background: #d0f0f8;
+  font-size: 1rem;
+}
+
+.journal-fields textarea {
+  height: 100px;
+  grid-column: span 3;
+}
+
+.save-btn {
+  grid-column: span 3;
+  background: #4fc3f7;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px #70c0e6, -4px -4px 8px #ffffff;
+}
